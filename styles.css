@@ -1,13 +1,51 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 body {
   background-color: grey
 }
+
 #wrapper {
-color: black
+  color: black;
 }
+
+#content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#navigation {
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+#footer {
+  position: fixed; 
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: #333;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.txtConstruction {
+  position: relative;
+  left: 40%;
+  width: 40%;
+}
+
+.historyTable {
+  margin-top: 10px;
+  position: relative;
+  left: 25%;
+}
+
 table {
+  left: 50%;
   text-align: center;
   position: static;
 }
@@ -38,30 +76,17 @@ ul {
   }
 
   #gallery {
-    position: relative;	
     max-width: 100%;
-  }
-
-  #gallery img {
-    max-width: 100%;
-    height: auto;
-    padding: 0;  
-  }
-   
-  .changer figure {        /* wird erst per JS aktiviert */
-    position: absolute;
-    width: 100%; 
-    margin: 0;
-    padding: 0;
-    opacity: 0;
+    position: relative;
+    margin: auto;
   }
 
   /* centered text element over the image */
   .center {
     position: absolute;
-    top: 40%;
-    left: 40%;
-    /*transform: translate(-50%, -50%);*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 25px;
     font-weight: bold;
     color: white;
@@ -84,22 +109,32 @@ ul {
   }
 
 
-#footer {
-  position: fixed; 
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  background-color: #333;
-  text-align: center;
-  padding: 14px 16px;
+
+
+#imgFalconHeavy {
+  position: relative;
+  margin-top: -15%;
+  height: auto;
+  width: auto;
+  max-width: 512px;
+  left: 5%;
+  padding-bottom: 50px;
 }
 
-#FalconHeavy {
-
-margin-top: 10%;
-margin-right: 500%;
-margin-bottom: 20%;
-margin-left: 500%;
+/* Fading animation */
+figure {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
+@-webkit-keyframes figure {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes figure {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
