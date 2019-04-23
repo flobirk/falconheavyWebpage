@@ -10,6 +10,7 @@ body {
   color: black;
 }
 
+/* ! Important note: index.html overrides this rule since its the landing page !*/
 #content {
   margin-left: 20px;
   margin-right: 20px;
@@ -110,6 +111,7 @@ table {
   width: 40%;
 }
 
+/* change appearance of the header */
 ul {
   list-style-type: none;
   margin: 0;
@@ -131,15 +133,11 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-
 li a:hover {
   background-color: #111;
-}
-
-#gallery {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
 }
 
 /* centered text element over the image */
@@ -157,6 +155,7 @@ li a:hover {
 
 .btn {
   border: none;
+  margin-top: 20px;
   padding: 16px 30px;
   text-align: center;
   color: white;
@@ -167,10 +166,16 @@ li a:hover {
 }
 
 .btn:hover {
-  background-color: #8a745c;
+  border: #998066;
+  /*   background-color: #8a745c; */
+  background-color: none;
 }
 
-/* Fading animation */
+.indic {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+}
 
 table {
   border-collapse: collapse;

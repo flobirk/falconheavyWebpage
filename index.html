@@ -1,54 +1,71 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <script src="script.js"></script>  
 
-    <title>FalconHeavy</title>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <title>FalconHeavy</title>
 </head>
-  <body>
-    <div id="wrapper">
-      <!-- im Browser sichtbarer Teil -->
-      <div id="header"> </div>
-      <div id="navigation"> 
-        <ul>
-          <li></i><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
-          <li><a href="history.html"><i class="fa fa-calendar" aria-hidden="true"></i> HISTORY</a></li>
-          <li><a href="construction.html"><i class="fa fa-rocket" aria-hidden="true"></i> CONSTRUCTION</a></li>
-          <li><a href="qanda.html"><i class="fa fa-group" aria-hidden="true"></i> Q/A</a></li>
-          <li><a href="imprint.html"><i class="fa fa-ball" aria-hidden="true"></i>IMPRINT</a></li>
-        </ul>
-      </div>
-      <div id="content">
-          <div class="crop" id="gallery">
-            <figure>
-                <img id="imgRocketLaunch" src="sources/rocketlaunch.jpg">
-            </figure>
-            <figure>
+
+<body>
+  <div id="wrapper">
+    <!-- im Browser sichtbarer Teil -->
+    <div id="header"> </div>
+    <div id="navigation">
+      <ul style="margin-bottom: 0">
+        <li></i><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
+        <li><a href="history.html"><i class="fa fa-calendar" aria-hidden="true"></i> HISTORY</a></li>
+        <li><a href="construction.html"><i class="fa fa-rocket" aria-hidden="true"></i> CONSTRUCTION</a></li>
+        <li><a href="qanda.html"><i class="fa fa-users" aria-hidden="true"></i> Q/A</a></li>
+        <li><a href="imprint.html"><i class="fa fa-gavel" aria-hidden="true"></i> IMPRINT</a></li>
+      </ul>
+    </div>
+    <div id="content" style="margin:0;">
+      <div class="crop">
+        <!-- Source of the slide animation: https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+          <div class="indic">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="item active">
+              <img id="imgRocketLaunch" src="sources/rocketlaunch.jpg">
+            </div>
+            <div class="item">
               <img id="imgLuminoustrails" src="sources/luminoustrails.jpg">
-            </figure>
-            <figure>
+            </div>
+            <div class="item">
               <img id="imgSingleRocket" src="sources/singlerocket.jpg">
-            </figure>
+            </div>
           </div>
-          <div class="center">
-            <h1>WELCOME</h1>
-            This is the amazing Falcon Heavy!
-            <p>
-              <a href="construction.html"><button class="btn">Read more</button></a>
-            </p>
-          </div>
+        </div>
+        <div class="center">
+          <h1>WELCOME</h1>
+          This is the amazing Falcon Heavy!
+          <p>
+            <a href="construction.html"><button class="btn">Read more</button></a>
+          </p>
+        </div>
       </div>
-      <div id="footer"> 
+      <div id="footer">
         <footer>
-            @2019 by Florian Birk 
+          @2019 by Florian Birk
         </footer>
       </div>
     </div>
-  </body>
+</body>
+
 </html>
