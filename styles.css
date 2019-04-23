@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: grey
+  background-color: rgb(167, 167, 167)
 }
 
 #wrapper {
@@ -15,6 +15,58 @@ body {
   margin-right: 20px;
 }
 
+.txtConstruction {
+  margin-top: 3%;
+  margin-right: 3%;
+  margin-left: 0%;
+  -webkit-column-count: 2;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 2;
+  /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 40px;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px;
+  /* Firefox */
+  column-gap: 40px;
+  -webkit-column-rule-style: solid;
+  /* Chrome, Safari, Opera */
+  -moz-column-rule-style: solid;
+  /* Firefox */
+  column-rule-style: solid;
+}
+
+#imgFalconHeavy {
+  position: relative;
+  height: auto;
+  width: auto;
+  max-width: 500px;
+  left: 3%;
+  padding-bottom: 70px;
+}
+
+.questions {
+  margin-top: 5%;
+  margin-right: 6%;
+  margin-left: 6%;
+  margin-bottom: 5%;
+  -webkit-column-count: 3;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 3;
+  /* Firefox */
+  column-count: 3;
+  -webkit-column-gap: 40px;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px;
+  /* Firefox */
+  column-gap: 40px;
+  -webkit-column-rule-style: solid;
+  /* Chrome, Safari, Opera */
+  -moz-column-rule-style: solid;
+  /* Firefox */
+  column-rule-style: solid;
+}
+
 #navigation {
   left: 0;
   top: 0;
@@ -22,7 +74,7 @@ body {
 }
 
 #footer {
-  position: fixed; 
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -39,102 +91,97 @@ body {
 }
 
 .historyTable {
-  margin-top: 10px;
+  margin-bottom: 70px;
+  margin-top: 30px;
   position: relative;
-  left: 25%;
+  left: -5%;
 }
 
 table {
-  left: 50%;
+  left: 30%;
   text-align: center;
-  position: static;
+  position: rel;
+}
+
+.historytext {
+  margin-top: 2%;
+  position: relative;
+  left: 30%;
+  width: 40%;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
-  #gallery {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-  }
+li {
+  float: left;
+}
 
-  /* centered text element over the image */
-  .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-  }
- 
-  .btn {
-    border: none;
-    padding: 16px 30px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 20px;
-    background-color: #998066;
-  }
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  .btn:hover {
-    background-color: #8a745c;
-  }
+/* Change the link color to #111 (black) on hover */
 
+li a:hover {
+  background-color: #111;
+}
 
-
-
-#imgFalconHeavy {
+#gallery {
+  max-width: 100%;
   position: relative;
-  margin-top: -15%;
-  height: auto;
-  width: auto;
-  max-width: 512px;
-  left: 5%;
-  padding-bottom: 50px;
+  margin: auto;
+}
+
+/* centered text element over the image */
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  padding: 16px 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #998066;
+}
+
+.btn:hover {
+  background-color: #8a745c;
 }
 
 /* Fading animation */
-figure {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-@-webkit-keyframes figure {
-  from {opacity: .4} 
-  to {opacity: 1}
+th, td {
+  text-align: left;
+  padding: 8px;
 }
 
-@keyframes figure {
-  from {opacity: .4} 
-  to {opacity: 1}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
